@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route, Outlet, Link } from "react-router-dom";
 import { Header } from "../Header";
 import { Main } from "../Main";
 import "./styles.css";
@@ -8,23 +8,14 @@ function SiteLayout() {
   return (
     <div className="site-layout">
       <Header />
-      <Switch>
-        <Route path="/region">
-          <Region />
-        </Route>
-        <Route path="/articles">
-          <Articles />
-        </Route>
-        <Route path="/photos">
-          <Photos />
-        </Route>
-        <Route path="/history">
-          <History />
-        </Route>
-        <Route path="/">
-          <Main />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route index element={<Main />} />
+        <Route path="region" element={<Region />} />
+        <Route path="articles" element={<Articles />} />
+        <Route path="photos" element={<Photos />} />
+        <Route path="history" element={<History />} />
+        <Route path="*" element={<div>404</div>} />
+      </Routes>
       <footer>
         <p>Нижний колонтитул сайта</p>
       </footer>

@@ -1,0 +1,17 @@
+.menu {
+    display: flex;
+    list-style: none
+  }
+  
+  .menu-link {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 12px;
+    color: #b9a89f;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .menu-link:hover,
+  .menu-link .active {
+    color: #826b60;
+  }

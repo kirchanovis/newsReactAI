@@ -17,21 +17,4 @@
   margin-right: 10px;
 }
 
-.site-menu {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
 
-.site-menu a {
-  font-family: "Fira Sans", sans-serif;
-  font-size: 12px;
-  color: #b9a89f;
-  text-decoration: none;
-  margin-right: 20px;
-}
-
-.site-menu a:hover,
-.site-menu a.active {
-  color: #826b60;
-}
