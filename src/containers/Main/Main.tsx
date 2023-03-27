@@ -4,7 +4,7 @@ import "./styles.css";
 function Main() {
 
   return (
-    <main className="site-main">
+    
       <div className="grid">
         <div className="item item-1-2">1-2</div>
         <div className="item">3</div>
@@ -17,7 +17,6 @@ function Main() {
         <div className="item">11</div>
         <div className="item">12</div>
       </div>
-    </main>
   );
 }
 
