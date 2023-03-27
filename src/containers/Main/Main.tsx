@@ -1,32 +1,22 @@
 import React from "react";
-import Masonry from "react-masonry-css";
 import "./styles.css";
 
 function Main() {
-  const breakpointColumnsObj = {
-    default: 4,
-    1100: 3,
-    700: 2,
-    500: 1
-  };
 
   return (
     <main className="site-main">
-      <Masonry
-        breakpointCols={breakpointColumnsObj}
-        className="masonry-grid"
-        columnClassName="masonry-grid-column"
-      >
-        <div className="masonry-grid-item"></div>
-        <div className="masonry-grid-item masonry-grid-item--height2"></div>
-        <div className="masonry-grid-item"></div>
-        <div className="masonry-grid-item"></div>
-        <div className="masonry-grid-item"></div>
-        <div className="masonry-grid-item masonry-grid-item--width2"></div>
-        <div className="masonry-grid-item"></div>
-        <div className="masonry-grid-item"></div>
-        <div className="masonry-grid-item"></div>
-      </Masonry>
+      <div className="grid">
+        <div className="item item-1-2">1-2</div>
+        <div className="item">3</div>
+        <div className="item item-4">4</div>
+        <div className="item">5</div>
+        <div className="item">6</div>
+        <div className="item">7</div>
+        <div className="item">9</div>
+        <div className="item">10</div>
+        <div className="item">11</div>
+        <div className="item">12</div>
+      </div>
     </main>
   );
 }

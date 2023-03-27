@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Header } from "../Header";
 import { Main } from "../Main";
 import "./styles.css";
@@ -17,7 +17,6 @@ function SiteLayout() {
         <Route path="*" element={<div>404</div>} />
       </Routes>
       <footer>
-        <p>Нижний колонтитул сайта</p>
       </footer>
     </div>
   );
