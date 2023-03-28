@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { Articles } from "../Articles";
 import { Header } from "../Header";
 import { Main } from "../Main";
+import { Photos } from "../Photos";
 import { Region } from "../Region";
 import "./styles.css";
 
@@ -26,10 +27,6 @@ function SiteLayout() {
 }
 
 export default SiteLayout;
-
-function Photos() {
-  return <h1>Фоторепортажи</h1>;
-}
 
 function History() {
   return <h1>История Ставрополья</h1>;
