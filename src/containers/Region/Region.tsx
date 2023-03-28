@@ -14,7 +14,7 @@ function Region() {
   return (
     <div className="news">
       <h2>Новость Ставрополя</h2>
-      <img src="https://example.com/news_image.jpg" alt="Новость" />
+      <img src="https://picsum.photos/800/500" alt="Новость" />
       <p>Автор: Иван Иванов</p>
       <p>Дата публикации: 23 марта 2023 года</p>
       <p>
@@ -41,14 +41,14 @@ function Region() {
         comments={[
             {
                 id: 1,
-                avatarUrl: 'https://example.com/avatar.jpg',
+                avatarUrl: 'https://i.pravatar.cc/50',
                 author: 'Иван Петров',
                 time: '10 минут назад',
                 text: 'Очень интересная новость! Надеюсь, что ремонт дорог пройдет без проблем.',
             },
             {
                 id: 1,
-                avatarUrl: 'https://example.com/avatar.jpg',
+                avatarUrl: 'https://i.pravatar.cc/50',
                 author: 'Мария Сидорова',
                 time: '5 минут назад',
                 text: 'Я тоже с нетерпением жду начала ремонта дорог. Надеюсь, что они будут сделаны качественно.',
