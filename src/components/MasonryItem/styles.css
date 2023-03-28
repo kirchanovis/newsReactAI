@@ -1,3 +1,9 @@
+.masonry-item{
+    position: relative;
+    border: 1px solid #d0c2ba;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px rgba(71, 60, 56, 0.2);
+}
 .masonry-item__section {
     position: absolute;
     top: 5px;
@@ -12,4 +18,11 @@
     left: 5px;
     font-size: 12px;
     color: #b9a89f;
+  }
+
+  .masonry-item__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
