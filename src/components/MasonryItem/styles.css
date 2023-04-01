@@ -3,6 +3,7 @@
     border: 1px solid #d0c2ba;
     border-radius: 2px;
     box-shadow: 0px 0px 7px rgba(71, 60, 56, 0.2);
+    height: 100%;
 }
 .masonry-item__section {
     position: absolute;
@@ -24,5 +25,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+  }
+
+  .masonry-item__img {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    background-image: url("https://picsum.photos/800/500");
+    background-size: cover; /* чтобы изображение полностью заполняло задний план */
+    background-position: center; /* чтобы изображение было выровнено по центру */
+    width: 100%;
+    height: 100%;
+  }
+
+  .masonry-item__bg {
+    position: absolute;
+    background-color: #9e8170;
+    opacity: 0.8;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+  }
+  .masonry-item__body {
+    position: relative;
+    z-index: 3;
     height: 100%;
   }
