@@ -1,5 +1,5 @@
 import React from "react";
-import { MasonryItem } from "../../components/MasonryItem";
+import { MasonryItem } from "../../../components/MasonryItem";
 import "./styles.css";
 
 function Main() {

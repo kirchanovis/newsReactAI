@@ -1,6 +1,8 @@
 import React from "react";
-import { Comments } from "../../components/Comments";
-import { SocialLinks } from "../../components/SocialLinks";
+import { Comments } from "../../../components/Comments";
+import { SocialLinks } from "../../../components/SocialLinks";
+import { Author } from "../../../components/Author";
+import { YoutubePlayer } from "../../../components/YoutubePlayer";
 
 type Props = {
   title: string;
@@ -15,8 +17,12 @@ function Region() {
     <div className="news">
       <h2>Новость Ставрополя</h2>
       <img src="https://picsum.photos/800/500" alt="Новость" />
-      <p>Автор: Иван Иванов</p>
-      <p>Дата публикации: 23 марта 2023 года</p>
+      <Author
+        avatar="https://i.pravatar.cc/50"
+        name="Иван Иванов"
+        date="23 марта 2023 года"
+        onSubscribe={() => console.log('onSubscribe')}
+      />
       <p>
         Политик обратился к жителям города со словами: "Я очень рад, что могу
         быть здесь с вами сегодня. Мы сделаем все, чтобы наш город был
@@ -28,6 +34,7 @@ function Region() {
         недовольство по поводу того, что ремонтные работы будут проводиться в
         часы пик, когда многие люди едут на работу или домой.
       </p>
+      <YoutubePlayer videoId="_g6mqdiRon0" />
       <blockquote className="tweet">
         <p>Текст твита из Twitter</p>
       </blockquote>

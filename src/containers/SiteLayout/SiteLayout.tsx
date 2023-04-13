@@ -1,10 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Articles } from "../Articles";
-import { Header } from "../Header";
-import { Main } from "../Main";
-import { Photos } from "../Photos";
-import { Region } from "../Region";
+import { Articles } from "../News/Articles";
+import { Header } from "../News/Header";
+import { Main } from "../News/Main";
+import { Photos } from "../News/Photos";
+import { Region } from "../News/Region";
+import { FlightMain } from "../Flight/FlightMain";
 import "./styles.css";
 
 function SiteLayout() {
@@ -18,6 +19,7 @@ function SiteLayout() {
           <Route path="articles" element={<Articles />} />
           <Route path="photos" element={<Photos />} />
           <Route path="history" element={<History />} />
+          <Route path="flight" element={<FlightMain />} />
           <Route path="*" element={<div>404</div>} />
         </Routes>
       </main>

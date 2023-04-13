@@ -1,7 +1,7 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { Comments } from '../../components/Comments';
-import { SocialLinks } from '../../components/SocialLinks';
+import { Comments } from '../../../components/Comments';
+import { SocialLinks } from '../../../components/SocialLinks';
 import "./styles.css";
 
 const images = [
